@@ -2,14 +2,17 @@
 ###Total: 5%
 ###Due Date: October 7th, 2015, 11:59pm
 
-`
+```
+
 # Please add your name, email
 Group 7
+Kyra Assaad, 
 Zach Munro-Cape, zach.munro.cape@mail.utoronto.ca
 Ajit Pawar, ajit.pawar@mail.utoronto.ca
-Colin White, colin.white@mail.utoronto.ca
 Ishan Thukral, ishan.thukral@mail.utoronto.ca
-`
+Colin White, colin.white@mail.utoronto.ca
+
+```
 
 ###PART 1: Topic Description (50/100 pts)
 
