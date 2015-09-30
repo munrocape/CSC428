@@ -6,7 +6,7 @@
 
 # Please add your name, email
 Group 7
-Kyra Assaad, 
+Kyra Assaad, kyra.assaad@mail.utoronto.ca
 Zach Munro-Cape, zach.munro.cape@mail.utoronto.ca
 Ajit Pawar, ajit.pawar@mail.utoronto.ca
 Ishan Thukral, ishan.thukral@mail.utoronto.ca
