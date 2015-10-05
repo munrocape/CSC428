@@ -22,10 +22,13 @@ Include a justification explaining why you think your project is an interesting 
 Your topic description is met to be a high level description (in simple and clear text) that
 introduces the instructor and the TA to your research project. Your topic description is very
 important because it formalizes what your team is trying to do.
+---
+Rubric: Topic is well-described. Justification explaining why this is an interesting HCI research topic is provided and relevant.
+
 ```
 
-As smartphone technology has evolved, multitasking is now supported on many mobile devices. This allows users to have many applications (apps) running at once and switch between them to save start up time and save state in a given app. Unlike PCs, screen real estate is much smaller on smartphones, meaning (for most devices) only one app can be in the foreground.
-The mechanism by which users swap between apps can vary wildly between devices. Sorted lists of applications, search methods, or gestures are common interactions to switch apps on smartphones.
+As smartphone technology has evolved, multitasking is now supported on many mobile devices. This allows users to have many applications (apps) running at once and switch between them to save start up time and save state in a given app. Unlike PCs, screen real estate is much smaller on smartphones, meaning (for most devices) only one app can be in the foreground. The ability to have one app open and save state while launching another app is becoming increasingly important for users to utilize their devices efficiently.
+The mechanism by which users swap active apps can vary wildly between devices. Sorted lists of applications, search methods, or gestures are common interactions to switch apps on smartphones.
 
 // Not sure we need this part...
 //Furthermore, apps that were once monoliths - like Facebook - are now split into many constituent apps like Messenger, Paper, //and a now smaller app still called Facebook. Finally, the methods for users to manage their active apps vary across devices.
