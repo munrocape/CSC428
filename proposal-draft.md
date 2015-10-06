@@ -23,7 +23,8 @@ Your topic description is met to be a high level description (in simple and clea
 introduces the instructor and the TA to your research project. Your topic description is very
 important because it formalizes what your team is trying to do.
 ---
-Rubric: Topic is well-described. Justification explaining why this is an interesting HCI research topic is provided and relevant.
+Rubric: Topic is well-described. Justification explaining why this is an interesting HCI 
+research topic is provided and relevant.
 
 ```
 
@@ -50,7 +51,22 @@ review such that the current state of the art is reviewed, followed by the ident
 research topic. The review should be between 500 - 750 words. All cited papers must be listed in
 a reference section at the end of your literature review and follow the CHI reference style (see
 CHI template).
+
+Rubric: Literature review specific to the research topic and includes least four (4) published 
+papers. Literature review is written in full sentences. Current state of the art is reviewed.
+
 ```
+####Literature Review
+The research on application switchers in smartphones is quite sparse. However, there has been research conducted on the costs of interruption when application switching to a user's workflow, as well as designing more efficient application switching interfaces for web and desktops. The results of this research help inform the design of this study.
+
+Warr and Chi [5] explored whether a “cards”-based mobile webpage switcher such as Google Chrome, which stacks open webpages like cards in the display, would result in faster webpage switching and less errors than a “pages”-based switcher such as Safari, where the webpages are displayed as pages laid out next to each other. This research was conducted in early 2013 with the Safari interface from iOS 6. As of October 2015, the most recent Safari interface is from iOS 9, which has since done away with the “pages”-based switcher and now implements a “cards”-based switcher. The research revealed that it is faster to switch webpages in the “cards”-based interface compared to the “pages”-based interface [5]. In iOS 8, Safari used a “cards”-based switcher for webpages, but the interface for switching between apps was still a “pages”-based switcher. In iOS 9, the application switcher has been updated to be a “cards”-based switcher as well. This study will be testing the application switchers of iOS 8, iOS 9, and Android for speed and error rate. 
+
+####References
+1. Stuart K. Card and Austin Henderson, Jr.. 1986. A multiple, virtual-workspace interface to support user task switching. In *Proceedings of the SIGCHI/GI Conference on Human Factors in Computing Systems and Graphics Interface* (CHI '87), John M. Carroll and Peter P. Tanner (Eds.). ACM, New York, NY, USA, 53-59. DOI=10.1145/29933.30860 http://doi.acm.org.myaccess.library.utoronto.ca/10.1145/29933.30860
+2. Gerard Kim and Hyeong Cheol Kim. 2011. Designing of multimodal feedback for enhanced multitasking performance. In *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems* (CHI '11). ACM, New York, NY, USA, 3113-3122. DOI=10.1145/1978942.1979403 http://doi.acm.org.myaccess.library.utoronto.ca/10.1145/1978942.1979403
+3. Luis A. Leiva. 2011. MouseHints: easing task switching in parallel browsing. In *CHI '11 Extended Abstracts on Human Factors in Computing Systems* (CHI EA '11). ACM, New York, NY, USA, 1957-1962. DOI=10.1145/1979742.1979861 http://doi.acm.org.myaccess.library.utoronto.ca/10.1145/1979742.1979861
+4. Luis Leiva, Matthias Böhmer, Sven Gehring, and Antonio Krüger. 2012. Back to the app: the costs of mobile application interruptions. In *Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services* (MobileHCI '12). ACM, New York, NY, USA, 291-294. DOI=10.1145/2371574.2371617 http://doi.acm.org.myaccess.library.utoronto.ca/10.1145/2371574.2371617
+5. Andrew Warr and Ed H. Chi. 2013. Swipe vs. scroll: web page switching on mobile browsers. In *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems* (CHI '13). ACM, New York, NY, USA, 2171-2174. DOI=10.1145/2470654.2481298 http://doi.acm.org.myaccess.library.utoronto.ca/10.1145/2470654.2481298
 
 ###What to submit
 ```
