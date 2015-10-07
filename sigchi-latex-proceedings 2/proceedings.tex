@@ -1,0 +1,146 @@
+\documentclass{sigchi}
+
+% Use this command to override the default ACM copyright statement
+% (e.g. for preprints).  Consult the conference website for the
+% camera-ready copyright statement.
+
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+% \toappear{Permission to make digital or hard copies of all or part of this work for personal or classroom use is      granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \\
+% {\emph{CHI'14}}, April 26--May 1, 2014, Toronto, Canada. \\
+% Copyright \copyright~2014 ACM ISBN/14/04...\$15.00. \\
+% DOI string from ACM form confirmation}
+%% EXAMPLE END -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+
+
+% Arabic page numbers for submission.  Remove this line to eliminate
+% page numbers for the camera ready copy 
+
+%\pagenumbering{arabic}
+
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead 
+%\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+\usepackage{times}    % comment if you want LaTeX's default font
+\usepackage[pdftex]{hyperref}
+% \usepackage{url}      % llt: nicely formatted URLs
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{ccicons}
+\usepackage{todonotes}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\bf\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={HCI Project Proposal and Preliminary Literature Review},
+  pdfauthor={LaTeX},
+  pdfkeywords={SIGCHI, proceedings, archival format},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{HCI Project Proposal and Preliminary Literature Review}
+
+\numberofauthors{5}
+\author{%
+  \alignauthor{Ajit Pawar\\
+    \affaddr{University of Toronto}\\
+    \affaddr{Toronto, Ontario}\\
+    \email{ajit.pawar@mail.utoronto.ca}}\\
+ \alignauthor{Colin White\\
+    \affaddr{University of Toronto}\\
+    \affaddr{Toronto, Ontario}\\
+    \email{colin.white@mail.utoronto.ca}}\\
+  \alignauthor{Ishan Thukral\\
+    \affaddr{University of Toronto}\\
+    \affaddr{Toronto, Ontario}\\
+    \email{ishan.thukral@mail.utoronto.ca}}\\
+ \alignauthor{Kyra Assaad\\
+    \affaddr{University of Toronto}\\
+    \affaddr{Toronto, Canada}\\
+    \email{kyra.assaad@mail.utoronto.ca}}\\
+  \alignauthor{Zach Munro-Cape\\
+    \affaddr{University of Toronto}\\
+    \affaddr{Toronto, Ontario}\\
+    \email{zach.munro.cape@mail.utoronto.ca}}\\
+}
+
+\maketitle
+
+
+\keywords{CSC428}
+
+\section{Topic Description}
+
+As smartphone technology has evolved, multitasking is now supported on many mobile devices. This allows users to have many applications (apps) running at once and switch between them to save start up time and save state in a given app. Unlike PCs, screen real estate is much smaller on smartphones, meaning, for most devices, only one app can be in the foreground. The ability to have one app open and save state while launching another app is becoming important for users to use their devices.
+
+The mechanism by which users swap active apps varies between devices. Sorted lists of applications, search methods, or gestures are common interactions to switch apps on smartphones.
+
+Furthermore, having multiple apps open at once is now commonplace and encouraged by device manufacturers and app developers. For example, you may draft an email, then launch a photo editor, and then insert this edited photo into the email draft. Facebook, a company who previously had only one app, has split its flagship app into apps that correspond to functional components and encourages users to seamlessly switch between them.
+
+This paper aims to measure the app switching speed, accuracy, and perceived success of multiple methods for a user to switch to an already open app, regain cognitive state, perform a task, and close an app down.
+
+\section{Literature Review}
+The research on application switchers in smartphones is quite sparse. However, there has been research conducted on the costs of interruption when application switching to a user's workflow, as well as designing more efficient application switching interfaces for web and desktops. The results of this research help inform the design of this study.
+
+Warr and Chi [5] explored whether a "cards"-based mobile webpage switcher, which stacks open webpages like cards in the display, would result in faster webpage switching and less errors than a "pages"-based switcher, where the webpages are displayed as pages laid out next to each other. The research revealed that it is faster to switch webpages in the cards-based interface compared to the pages-based interface, but that there was no significant difference in error rates between the two interfaces [5]. Our research will be investigating both a cards-based application switcher and a pages-based switcher for speed and error rates.
+
+Nagata [4] examined the impact of distractions on performing a main task as well as handling a secondary task on mobile and desktop devices. The study measured the total time taken and the accuracy of completing both tasks, as well as the time to transition between tasks. One of the take-aways from this was the impact of switching apps on a mobile device on distraction time. While this device was from 2001, and there have been marked improvements in handheld devices, slow transition times between activities negatively impacted all the metrics. Determining an effective method to manage apps will allow users to use their devices and apps better overall.
+
+Henderson and Card [1] observed that users interacting with an interface often organize tasks along a number of different dimensions, the most important of them being "locality" of tasks. The study found that users often form clusters of windows (applications) corresponding to a specific task. This insight led to development of interfaces that produce "virtual views" that allow users to focus their interactions within semantically meaningful cluster of windows. Modern smartphone multitasking interfaces sort exclusively in chronological order, so applying this clustering method to interfaces we test could improve user performance.
+
+Leiva et al. [4] explored the cognitive costs of intended and unintended app switching and found that performing an app switch can increase completion time of a task by a factor of four. The authors propose several methods to reduce app switching cognitive overhead, such as replaying N milliseconds of previous UI interactions, however they do not examine the app switching mechanism itself. We plan to investigate incorporating some motion into the app switching interface itself to help users more effectively recognize the target app and regain their task state. The paper estimated app switching events to be at most 10% of daily application usage, thereby underscoring the necessity for having an effective app switching interface.
+
+Leiva [2] explored different techniques to improve task resumption time in a multi-tab browser environment. Multitasking over different types of tasks can reduce productivity, lead to more errors and contrary to what we might expect, lead to a higher task completion time [2]. The study investigated the effects of a tool designed to remind users of their position on the screen prior to app switching, as well as the last interacted element and cursor position. The use of this tool improved task resumption time and task completion time. In our research we will attempt remind users of their task state using this proposed method.
+
+\section{References}
+
+1. Stuart K. Card and Austin Henderson, Jr.. 1986. A multiple, virtual-workspace interface to support user task switching. In \textit{Proceedings of the SIGCHI/GI Conference on Human Factors in Computing Systems and Graphics Interface} (CHI '87), John M. Carroll and Peter P. Tanner (Eds.). ACM, New York, NY, USA, 53-59. DOI=10.1145/29933.30860 http://doi.acm.org/10.1145/29933.30860
+
+2. Luis A. Leiva. 2011. MouseHints: easing task switching in parallel browsing. In \textit{CHI '11 Extended Abstracts on Human Factors in Computing Systems} (CHI EA '11). ACM, New York, NY, USA, 1957-1962. DOI=10.1145/1979742.1979861 http://doi.acm.org/10.1145/1979742.1979861
+
+3. Luis Leiva, Matthias Böhmer, Sven Gehring, and Antonio Krüger. 2012. Back to the app: the costs of mobile application interruptions. In \textit{Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services} (MobileHCI '12). ACM, New York, NY, USA, 291-294. DOI=10.1145/2371574.2371617 http://doi.acm.org/10.1145/2371574.2371617
+
+4. Stacey F. Nagata. 2003. Multitasking and interruptions during mobile web tasks. In \textit{Proceedings of the Human Factors and Ergonomics Society Annual Meeting}. 47, 11 (2003), 1341?1345.
+
+5. Andrew Warr and Ed H. Chi. 2013. Swipe vs. scroll: web page switching on mobile browsers. In \textit{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems} (CHI '13). ACM, New York, NY, USA, 2171-2174. DOI=10.1145/2470654.2481298 http://doi.acm.org/10.1145/2470654.2481298
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
