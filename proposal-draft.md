@@ -31,7 +31,7 @@ research topic is provided and relevant.
 As smartphone technology has evolved, multitasking is now supported on many mobile devices. This allows users to have many applications (apps) running at once and switch between them to save start up time and save state in a given app. Unlike PCs, screen real estate is much smaller on smartphones, meaning (for most devices) only one app can be in the foreground. The ability to have one app open and save state while launching another app is becoming increasingly important for users to utilize their devices efficiently.
 The mechanism by which users swap active apps can vary wildly between devices. Sorted lists of applications, search methods, or gestures are common interactions to switch apps on smartphones.
 
-Furthermore, having multiple apps open at once is now commonplace and encoraged by device manufacturers and app developers. For example, you may draft an email, then launch a photo editor, and then insert this edited photo into the email draft. Facebook, a company who previously had only one app, has split its flagship app into apps that correspond to functional components and encouragse users to seamlessly switch between them.
+Furthermore, having multiple apps open at once is now commonplace and encouraged by device manufacturers and app developers. For example, you may draft an email, then launch a photo editor, and then insert this edited photo into the email draft. Facebook, a company who previously had only one app, has split its flagship app into apps that correspond to functional components and encourages users to seamlessly switch between them.
 
 This paper aims to measure the effectiveness, efficiency, and accuracy of multiple methods for a user to switch to an already open app, open a new instance of an app, or close an app down.
 
@@ -73,7 +73,7 @@ In "Mouse Hints: Easing Task Switching in Parallel Browsing" [3], Levia, explore
 2. Luis A. Leiva. 2011. MouseHints: easing task switching in parallel browsing. In *CHI '11 Extended Abstracts on Human Factors in Computing Systems* (CHI EA '11). ACM, New York, NY, USA, 1957-1962. DOI=10.1145/1979742.1979861 http://doi.acm.org.myaccess.library.utoronto.ca/10.1145/1979742.1979861
 3. Luis Leiva, Matthias Böhmer, Sven Gehring, and Antonio Krüger. 2012. Back to the app: the costs of mobile application interruptions. In *Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services* (MobileHCI '12). ACM, New York, NY, USA, 291-294. DOI=10.1145/2371574.2371617 http://doi.acm.org.myaccess.library.utoronto.ca/10.1145/2371574.2371617
 4. Andrew Warr and Ed H. Chi. 2013. Swipe vs. scroll: web page switching on mobile browsers. In *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems* (CHI '13). ACM, New York, NY, USA, 2171-2174. DOI=10.1145/2470654.2481298 http://doi.acm.org.myaccess.library.utoronto.ca/10.1145/2470654.2481298
-5. Nagata, Stacey F. "Multitasking and interruptions during mobile web tasks." *Proceedings of the Human Factors and Ergonomics Society Annual Meeting.* Vol. 47. No. 11. SAGE Publications, 2003.
+5. Nagata, Stacey F. 2003. Multitasking and interruptions during mobile web tasks. In *Proceedings of the Human Factors and Ergonomics Society Annual Meeting.* Vol. 47. No. 11. SAGE Publications.
 
 ###What to submit
 ```
