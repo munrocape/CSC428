@@ -1,0 +1,185 @@
+\documentclass{sigchi}
+
+% Use this command to override the default ACM copyright statement
+% (e.g. for preprints).  Consult the conference website for the
+% camera-ready copyright statement.
+
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+% \toappear{Permission to make digital or hard copies of all or part of this work for personal or classroom use is      granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \\
+% {\emph{CHI'14}}, April 26--May 1, 2014, Toronto, Canada. \\
+% Copyright \copyright~2014 ACM ISBN/14/04...\$15.00. \\
+% DOI string from ACM form confirmation}
+%% EXAMPLE END -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+
+
+% Arabic page numbers for submission.  Remove this line to eliminate
+% page numbers for the camera ready copy 
+
+%\pagenumbering{arabic}
+
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead 
+%\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+\usepackage{times}    % comment if you want LaTeX's default font
+\usepackage[pdftex]{hyperref}
+% \usepackage{url}      % llt: nicely formatted URLs
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{ccicons}
+\usepackage{todonotes}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\bf\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={HCI Draft Paper},
+  pdfauthor={LaTeX},
+  pdfkeywords={SIGCHI, proceedings, archival format},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+\def\sharedaffiliation{%
+\end{tabular}
+\begin{tabular}{c}}
+%
+\begin{document}
+
+\title{HCI Draft Paper}
+
+
+\numberofauthors{5}
+\author{
+    Kyra Assaad, Zach Munro-Cape, Ajit Pawar, Ishan Thukral, \& Colin White\\
+  \sharedaffiliation
+      \affaddr{Department Computer Science }  \\
+      \affaddr{University of Toronto }   \\
+      \affaddr{Toronto, Ontario} \\
+      \email{\{kyra.assaad,zach.munro.cape,ajit.pawar,ishan.thukral,colin.white\}@mail.utoronto.ca }
+}
+
+%\author{%
+%  \alignauthor{Ajit Pawar\\
+%    \affaddr{University of Toronto}\\
+%    \affaddr{Toronto, Ontario}\\
+%    \email{ajit.pawar@mail.utoronto.ca}}\\
+% \alignauthor{Colin White\\
+%    \affaddr{University of Toronto}\\
+%    \affaddr{Toronto, Ontario}\\
+%    \email{colin.white@mail.utoronto.ca}}\\
+%  \alignauthor{Ishan Thukral\\
+%    \affaddr{University of Toronto}\\
+%    \affaddr{Toronto, Ontario}\\
+%    \email{ishan.thukral@mail.utoronto.ca}}\\
+% \alignauthor{Kyra Assaad\\
+%    \affaddr{University of Toronto}\\
+%    \affaddr{Toronto, Canada}\\
+%    \email{kyra.assaad@mail.utoronto.ca}}\\
+%  \alignauthor{Zach Munro-Cape\\
+%    \affaddr{University of Toronto}\\
+%    \affaddr{Toronto, Ontario}\\
+%    \email{zach.munro.cape@mail.utoronto.ca}}\\
+%}
+
+\maketitle
+
+
+
+\section{Introduction}
+
+As smartphone technology has evolved, multitasking is now supported on many mobile devices. This allows users to have many applications (apps) running at once, and to switch between them to save startup time and state in a given app. Unlike PCs, screen real estate is much smaller on smartphones, meaning, for most devices, only one app can be in the foreground at a time. The ability to have one app open while launching another app is increasingly important for users to use their devices effectively. Leiva et al. estimate that app switching events are around 10\% of daily application usage [3]. Having multiple apps open at once is now commonplace and encouraged by device manufacturers and app developers. For example, you may draft an email, then switch to a photo editor, and then switch back to email to insert the edited photo into the draft. 
+
+The mechanism by which users switch active apps varies between devices. Lists of applications, search methods, or gestures are common interactions to switch apps on smartphones. The most common way to switch apps is to open the application switching interface, or rather, the multitasking interface which varies by device. In the two major operating systems for smartphones, Android and iOS, each application is displayed in a list where the user can scroll through to select the desired application. 
+
+In this study, we aim to measure the app switching speed, accuracy, and perceived success of multiple methods for a user to switch to an already open app, regain cognitive state, perform a task, and then switch to another app in the Android operating system.
+
+\section{Related Works}
+The research on multitasking interfaces in smartphones is quite sparse. However, research has been conducted on the costs of interruption to a user's workflow when application switching, as well as designing more efficient multitasking interfaces for web and desktops. 
+
+In the study that is most closely related to this experiment, Warr and Chi [7] explored whether a "cards"-based mobile webpage switcher, which stacks open webpages like cards in the display, would result in faster webpage switching and less errors than a "pages"-based switcher, where the webpages are displayed as pages laid out next to each other. The research revealed that it is faster to switch webpages in the cards-based interface compared to the pages-based interface, but that there was no significant difference in error rates between the two interfaces [7]. Our research will be investigating both a cards-based application switcher and a pages-based switcher for speed and error rates.
+
+Switching between apps incurs a cost in terms of task completion time. Nagata [5] examined the impact of digital interruptions on task performance on mobile and desktop devices, and Leiva et al. [3] studied the cognitive costs associated with switching apps. An interruption, say in the form of an app notification, can cause a user to multitask or switch apps by shifting attention from the task to the interruption [5]. Both studies found that task completion time increased when users switched between apps; in Leiva et al.'s study, that completion time was increased by a factor of four [3]. It was found that mobile web tasks with interruptions take longer to complete than on desktop, but when the interruption is expected, performance time decreased on a mobile device [5]. As a result, if a user is expecting to switch apps, they can complete tasks between apps more efficiently.
+
+Given the cost to task completion time from switching apps, there have been many studies done on how to increase task resumption and completion time when multitasking. Leiva explored different techniques to improve task resumption time in a multi-tab browser environment [2], and Lottridge et al. investigated how the design of applications encourages or discourages multitasking behavior in general [4]. Leiva investigated the effects of a tool designed to remind users of their position on the screen prior to app switching as well as the last interacted element and cursor position, while Lottridge et al. looked at making users more aware of the time spent in "work" versus "non-work" categories of websites. Lottridge et al. found that by making users more aware of the passage of time, users had fewer webpage tabs open, fewer tab switches and shorter sessions within webpages [4], indicating that users were more efficient with their time spent on the web. Leiva found that the use of his tool improved task resumption time and task completion time. 
+
+Card and Henderson [1] observed that users interacting with an interface often organize tasks along a number of different dimensions, the most important of them being "locality" of tasks. The study found that users often form clusters of windows (apps) corresponding to a specific task. This insight led to development of interfaces that produce "virtual views" that allow users to focus their interactions within semantically meaningful clusters of windows. Modern smartphone multitasking interfaces sort opened apps in temporal order, but if a user is switching between two or three apps a time to perform a task, those apps in smartphone multitasking interfaces will be sorted together at the front of the list. If the apps are "clustered" to match with the user's mental model, this could result in faster and less error-prone application switching. In fact, Oliver et al. investigated a tool that indicated which windows in a multitasking interface were semantically related [6]. The use of this tool resulted in significantly more efficient task completion time, but it was noted that there was a negative effect when windows in the multitasking interface were reordered if the user interrupted the main task to switch to a different task [6]. This is what currently occurs in smartphone multitasking interfaces, which is why we intend to investigate the speed and accuracy of modern smartphone multitasking interfaces.
+
+\section{Research Question and Hypotheses}
+The purpose of this experiment is to determine how, if at all, different mobile multitasking interfaces affect accuracy in switching between applications as well as the time that it takes to switch applications. We will be investigating two different interfaces: a "stacked" interface where the pages that represent different opened apps overlap with each other, and a "non-stacked" interface where the pages are separated. \\
+
+H1: Users will be faster at switching between applications in the stacked interface.\\
+H2: Users will have greater accuracy when switching between applications in the non-stacked interface. \\
+
+The reasoning behind this is that while you can have more applications visible at any given time in a stacked layout, each application has a smaller target area to select, which translates into less accuracy.
+
+\section{Methodology}
+\section{Apparatus}
+
+\section{Participants}
+Sixteen participants (ages 19-26) were recruited and did not receive monetary compensation for their participation. They all were currently pursuing an undergraduate degree at the University of Toronto. All participants met the criteria of previous experience with the Android operating system and no visual or hand dexterity disabilities. Participants were randomly assigned to begin with the stacked interface (n=8) or non-stacked interface (n=8). The study was carried out in a meeting room at the Mobile Application Development Lab (MADLab) which is located at the University of Toronto.
+
+\section{Experimental Design}
+
+\section{Tasks and Procedures}
+
+\section{Measures}
+
+\section{Data Collection}
+Each participant completed a short questionnaire before the experiment to determine age, gender, handedness, as well as any prior experience with the device. Another questionnaire was completed after the experiment to determine preference and perceived speed and accuracy. The Android phones were connected to a MacBook Pro via micro-USB cable. Task completion time was logged using the Android Debug Bridge logging system. Errors were monitored by the experimenter and made note of. The task logs were parsed using a Python script, and the data was outputted in ANOVA readable format.
+
+\section{Preliminary Results}
+
+\section{Preliminary Discussion}
+
+\section{References}
+1. Card, S. and Henderson Jr., A. A multiple, virtual-workspace interface to support user task switching.  \textit{Proceedings of the SIGCHI/GI Conference on Human Factors in Computing Systems and Graphics Interface}, CHI '87 (1986), 53-59.
+
+2. Leiva, L. MouseHints: easing task switching in parallel browsing.  \textit{CHI '11 Extended Abstracts on Human Factors in Computing Systems}, CHI EA '11 (2011), 1957-1962.
+
+3. Leiva, L., Böhmer, M., Gehring, S. and Krüger, A. Back to the app.  \textit{Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services}, MobileHCI '12 (2012), 291-294.
+
+4. Lottridge, D., Marschner, E., Wang, E., Romanovsky, M. and Nass, C. Browser Design Impacts Multitasking.  \textit{Proceedings of the Human Factors and Ergonomics Society Annual Meeting 56}, 1 (2012), 1957-1961.
+
+5. Nagata, S. Multitasking and Interruptions during Mobile Web Tasks.  \textit{Proceedings of the Human Factors and Ergonomics Society Annual Meeting 47}, 11 (2003), 1341-1345.
+
+6. Oliver, N., Czerwinski, M., Smith, G. and Roomp, K. RelAltTab.  \textit{Proceedings of the 13th international conference on Intelligent user interfaces}, IUI '08 (2008), 385-388.
+
+7. Warr, A. and Chi, E. Swipe vs. scroll.  \textit{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems}, CHI '13 (2013).
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
