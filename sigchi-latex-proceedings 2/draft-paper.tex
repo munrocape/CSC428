@@ -14,13 +14,13 @@
 
 
 % Arabic page numbers for submission.  Remove this line to eliminate
-% page numbers for the camera ready copy 
+% page numbers for the camera ready copy
 
 %\pagenumbering{arabic}
 
 % Load basic packages
 \usepackage{balance}  % to better equalize the last page
-\usepackage{graphics} % for EPS, load graphicx instead 
+\usepackage{graphics} % for EPS, load graphicx instead
 %\usepackage[T1]{fontenc}
 \usepackage{txfonts}
 \usepackage{times}    % comment if you want LaTeX's default font
@@ -118,20 +118,20 @@
 
 \section{Introduction}
 
-As smartphone technology has evolved, multitasking is now supported on many mobile devices. This allows users to have many applications (apps) running at once, and to switch between them to save startup time and state in a given app. Unlike PCs, screen real estate is much smaller on smartphones, meaning, for most devices, only one app can be in the foreground at a time. The ability to have one app open while launching another app is increasingly important for users to use their devices effectively. Leiva et al. estimate that app switching events are around 10\% of daily application usage [3]. Having multiple apps open at once is now commonplace and encouraged by device manufacturers and app developers. For example, you may draft an email, then switch to a photo editor, and then switch back to email to insert the edited photo into the draft. 
+As smartphone technology has evolved, multitasking is now supported on many mobile devices. This allows users to have many applications (apps) running at once, and to switch between them to save startup time and state in a given app. Unlike PCs, screen real estate is much smaller on smartphones, meaning, for most devices, only one app can be in the foreground at a time. The ability to have one app open while launching another app is increasingly important for users to use their devices effectively. Leiva et al. estimate that app switching events are around 10\% of daily application usage [3]. Having multiple apps open at once is now commonplace and encouraged by device manufacturers and app developers. For example, you may draft an email, then switch to a photo editor, and then switch back to email to insert the edited photo into the draft.
 
-The mechanism by which users switch active apps varies between devices. Lists of applications, search methods, or gestures are common interactions to switch apps on smartphones. The most common way to switch apps is to open the application switching interface, or rather, the multitasking interface which varies by device. In the two major operating systems for smartphones, Android and iOS, each application is displayed in a list where the user can scroll through to select the desired application. 
+The mechanism by which users switch active apps varies between devices. Lists of applications, search methods, or gestures are common interactions to switch apps on smartphones. The most common way to switch apps is to open the application switching interface, or rather, the multitasking interface which varies by device. In the two major operating systems for smartphones, Android and iOS, each application is displayed in a list where the user can scroll through to select the desired application.
 
 In this study, we aim to measure the app switching speed, accuracy, and perceived success of multiple methods for a user to switch to an already open app, regain cognitive state, perform a task, and then switch to another app in the Android operating system.
 
 \section{Related Works}
-The research on multitasking interfaces in smartphones is quite sparse. However, research has been conducted on the costs of interruption to a user's workflow when application switching, as well as designing more efficient multitasking interfaces for web and desktops. 
+The research on multitasking interfaces in smartphones is quite sparse. However, research has been conducted on the costs of interruption to a user's workflow when application switching, as well as designing more efficient multitasking interfaces for web and desktops.
 
 In the study that is most closely related to this experiment, Warr and Chi [7] explored whether a "cards"-based mobile webpage switcher, which stacks open webpages like cards in the display, would result in faster webpage switching and less errors than a "pages"-based switcher, where the webpages are displayed as pages laid out next to each other. The research revealed that it is faster to switch webpages in the cards-based interface compared to the pages-based interface, but that there was no significant difference in error rates between the two interfaces [7]. Our research will be investigating both a cards-based application switcher and a pages-based switcher for speed and error rates.
 
 Switching between apps incurs a cost in terms of task completion time. Nagata [5] examined the impact of digital interruptions on task performance on mobile and desktop devices, and Leiva et al. [3] studied the cognitive costs associated with switching apps. An interruption, say in the form of an app notification, can cause a user to multitask or switch apps by shifting attention from the task to the interruption [5]. Both studies found that task completion time increased when users switched between apps; in Leiva et al.'s study, that completion time was increased by a factor of four [3]. It was found that mobile web tasks with interruptions take longer to complete than on desktop, but when the interruption is expected, performance time decreased on a mobile device [5]. As a result, if a user is expecting to switch apps, they can complete tasks between apps more efficiently.
 
-Given the cost to task completion time from switching apps, there have been many studies done on how to increase task resumption and completion time when multitasking. Leiva explored different techniques to improve task resumption time in a multi-tab browser environment [2], and Lottridge et al. investigated how the design of applications encourages or discourages multitasking behavior in general [4]. Leiva investigated the effects of a tool designed to remind users of their position on the screen prior to app switching as well as the last interacted element and cursor position, while Lottridge et al. looked at making users more aware of the time spent in "work" versus "non-work" categories of websites. Lottridge et al. found that by making users more aware of the passage of time, users had fewer webpage tabs open, fewer tab switches and shorter sessions within webpages [4], indicating that users were more efficient with their time spent on the web. Leiva found that the use of his tool improved task resumption time and task completion time. 
+Given the cost to task completion time from switching apps, there have been many studies done on how to increase task resumption and completion time when multitasking. Leiva explored different techniques to improve task resumption time in a multi-tab browser environment [2], and Lottridge et al. investigated how the design of applications encourages or discourages multitasking behavior in general [4]. Leiva investigated the effects of a tool designed to remind users of their position on the screen prior to app switching as well as the last interacted element and cursor position, while Lottridge et al. looked at making users more aware of the time spent in "work" versus "non-work" categories of websites. Lottridge et al. found that by making users more aware of the passage of time, users had fewer webpage tabs open, fewer tab switches and shorter sessions within webpages [4], indicating that users were more efficient with their time spent on the web. Leiva found that the use of his tool improved task resumption time and task completion time.
 
 Card and Henderson [1] observed that users interacting with an interface often organize tasks along a number of different dimensions, the most important of them being "locality" of tasks. The study found that users often form clusters of windows (apps) corresponding to a specific task. This insight led to development of interfaces that produce "virtual views" that allow users to focus their interactions within semantically meaningful clusters of windows. Modern smartphone multitasking interfaces sort opened apps in temporal order, but if a user is switching between two or three apps a time to perform a task, those apps in smartphone multitasking interfaces will be sorted together at the front of the list. If the apps are "clustered" to match with the user's mental model, this could result in faster and less error-prone application switching. In fact, Oliver et al. investigated a tool that indicated which windows in a multitasking interface were semantically related [6]. The use of this tool resulted in significantly more efficient task completion time, but it was noted that there was a negative effect when windows in the multitasking interface were reordered if the user interrupted the main task to switch to a different task [6]. This is what currently occurs in smartphone multitasking interfaces, which is why we intend to investigate the speed and accuracy of modern smartphone multitasking interfaces.
 
@@ -152,6 +152,9 @@ Sixteen participants (ages 19-26) were recruited and did not receive monetary co
 \section{Experimental Design}
 
 \section{Tasks and Procedures}
+The experimenter explained the purpose of the experiment to the participant and answered any general questions about the experiment. Each participant completed the entry survey (Appendix D) and signed the consent form (Appendix C). The experimenter showed the participant the experimental setup and described the tasks. For the setup, the experimenter confirmed that all apps needed for testing are pre-installed on the phone and are currently open, and that both phones are plugged into a computer and are being monitored. The experimenter confirmed that the participant knew how to open the multitasking interface and use the copy and paste function on the phone.
+
+Each participant performed 3 blocks of tasks twice, once on KitKat and then on Lollipop. There were 6 trials in total per participant. The order of trials was balanced such that each participant performed the same set of tasks in the same order, but starting on a different device. Half the participants were randomly chosen to start on KitKat first, while the other half started on Lollipop first. Each participant was handed a printed sheet outlining all the tasks (see Appendix A). The participant read each block of tasks and executed them in the order listed on the sheet. Each block was preceded by a setup session for the experimenter to setup the device  (see Appendix B). The participant completed the tasks at his/her own pace. At the commencement of the experiment (6 trials), the participant completed an exit survey (see Appendix E). The whole experiment took about 20 minutes to complete per participant.
 
 \section{Measures}
 
@@ -161,44 +164,44 @@ Each participant completed a short questionnaire before the experiment to determ
 \section{Preliminary Results}
 
 \begin{center}
- \begin{tabular}{|c c c|} 
+ \begin{tabular}{|c c c|}
  \hline
- Participant Number & Kitkat Speed & Lollipop Speed \\ [0.5ex] 
+ Participant Number & Kitkat Speed & Lollipop Speed \\ [0.5ex]
  \hline\hline
- 1 & 2.52 & 2.19\\ 
+ 1 & 2.52 & 2.19\\
  \hline
  2 & 2.46 & 2.59 \\
  \hline
  4 & 2.28 & 2.14 \\
  \hline
- 5 & 2.80 & 3.27 \\ 
+ 5 & 2.80 & 3.27 \\
  \hline
- 6 & 2.76 & 2.17 \\ 
+ 6 & 2.76 & 2.17 \\
  \hline
- 7 & 1.96 & 1.89 \\ 
+ 7 & 1.96 & 1.89 \\
  \hline
- 8 & 2.02 & 1.79 \\ 
+ 8 & 2.02 & 1.79 \\
  \hline
- 9 & 2.60 & 2.67 \\ 
+ 9 & 2.60 & 2.67 \\
  \hline
- 10 & 2.06 & 1.17 \\ 
+ 10 & 2.06 & 1.17 \\
  \hline
- 11 & 2.95 & 1.87 \\ 
+ 11 & 2.95 & 1.87 \\
  \hline
- 12 & 2.28 & 1.71 \\ 
+ 12 & 2.28 & 1.71 \\
  \hline
- 13 & 2.88 & 1.85 \\ 
+ 13 & 2.88 & 1.85 \\
  \hline
- 14 & 1.92 & 2.72 \\ 
+ 14 & 1.92 & 2.72 \\
  \hline
- 15 & 2.05 & 2.46  \\ 
+ 15 & 2.05 & 2.46  \\
  \hline
- 16 & 2.69 & 3.03 \\ 
+ 16 & 2.69 & 3.03 \\
  \hline
-  17 & 1.73 & 2.00 \\ 
+  17 & 1.73 & 2.00 \\
  \hline \hline
- Avg & 2.37 & 2.22 \\ 
- 
+ Avg & 2.37 & 2.22 \\
+
  \hline
 \end{tabular}
 \end{center}
@@ -208,44 +211,44 @@ $(F_{1, 15} = 1.19, ns )$
 \end{center}
 
 \begin{center}
- \begin{tabular}{|c c c|} 
+ \begin{tabular}{|c c c|}
  \hline
- Participant Number & Kitkat Errors & Lollipop Errors \\ [0.5ex] 
+ Participant Number & Kitkat Errors & Lollipop Errors \\ [0.5ex]
  \hline\hline
- 1 & 1 & 1\\ 
+ 1 & 1 & 1\\
  \hline
  2 & 10 & 5\\
  \hline
  4 & 0 & 0 \\
  \hline
- 5 & 1 & 3 \\ 
+ 5 & 1 & 3 \\
  \hline
- 6 & 4 & 1 \\ 
+ 6 & 4 & 1 \\
  \hline
- 7 & 0 & 2 \\ 
+ 7 & 0 & 2 \\
  \hline
- 8 & 0 & 1 \\ 
+ 8 & 0 & 1 \\
  \hline
- 9 & 10 & 4 \\ 
+ 9 & 10 & 4 \\
  \hline
- 10 & 1 & 0 \\ 
+ 10 & 1 & 0 \\
  \hline
- 11 & 2 & 2 \\ 
+ 11 & 2 & 2 \\
  \hline
- 12 & 3 & 3 \\ 
+ 12 & 3 & 3 \\
  \hline
- 13 & 1 & 1 \\ 
+ 13 & 1 & 1 \\
  \hline
- 14 & 0 & 0 \\ 
+ 14 & 0 & 0 \\
  \hline
- 15 & 1 & 0  \\ 
+ 15 & 1 & 0  \\
  \hline
- 16 & 2 & 1 \\ 
+ 16 & 2 & 1 \\
  \hline
-  17 & 2 & 1 \\ 
+  17 & 2 & 1 \\
  \hline \hline
- Avg & 2.37 & 1.56 \\ 
- 
+ Avg & 2.37 & 1.56 \\
+
  \hline
 \end{tabular}
 \end{center}
