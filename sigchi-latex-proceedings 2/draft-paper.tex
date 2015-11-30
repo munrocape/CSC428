@@ -172,6 +172,7 @@ The dependent variables in this study were time spent in the multitasking interf
 Each participant completed a short questionnaire before the experiment to determine age, gender, handedness, as well as any prior experience with the device. Another questionnaire was completed after the experiment to determine preference and perceived speed and accuracy. The Android phones were connected to a MacBook Pro via micro-USB cable. Task completion time was logged using the Android Debug Bridge logging system. Errors were monitored by the experimenter and made note of. The task logs were parsed using a Python script, and the data was outputted in ANOVA readable format.
 
 \section{Preliminary Results}
+The mean task completion time for each participant on each interface is outlined in the following table.
 
 \begin{center}
  \begin{tabular}{|c c c|}
@@ -216,9 +217,14 @@ Each participant completed a short questionnaire before the experiment to determ
 \end{tabular}
 \end{center}
 
+Given that this was a within-subjects test where we had 1 independent variable, a one-way with one within-subjects factor ANOVA test was carried out.
+The mean task completion times was 2.37 seconds for KitKat (non-stacked).  This was 6.7\% slower than the mean of Lollipop (stacked) which was 2.22 seconds. The difference was not statistically significant
+
 \begin{center}
 $(F_{1, 15} = 1.19, ns )$
 \end{center}
+
+The number of errors per device over the testing period is presented below.
 
 \begin{center}
  \begin{tabular}{|c c c|}
@@ -263,10 +269,13 @@ $(F_{1, 15} = 1.19, ns )$
 \end{tabular}
 \end{center}
 
-
+The mean error rate for was 2.37 total errors for Kitkat and 1.56 total errors per participant for Lollipop. However, as there was substantial variation in the observations across participants, the difference was not statistically significant as revealed by the analysis of variance. Once again, a one-way with one within-subjects factor ANOVA test was carried out
 \begin{center}
 $(F_{1, 15} = 2.19, ns )$
 \end{center}
+
+The exit survey questions relating to the participant’s perceived accuracy and speed were converted to an ordinal scale between 1 and 5. Participants believed they were slightly faster on Lollipop (3.92 average response versus 3.76). Participants perceived they were more accurate on Kitkat (4.38 average response versus 4.07).
+
 
 \section{Preliminary Discussion}
 While the differences between speed and accuracy are statistically insignificant, a discussion can still take place. The stacked interface was perceived by the participants to be faster, which held when examining the data. This is inline with previous literature like the work of Warr and Chi [7]. However, this begs the question: why is stacked interface perceived as quicker? It’s possible this is due to the fact that the motion of the cards is toward the user rather than down. In addition, with the stacked interface the user can control the sensitivity of the scroll by scrolling from higher up on the screen. This allows users to more quickly traverse a long list of apps at the cost of some granularity of motion.
